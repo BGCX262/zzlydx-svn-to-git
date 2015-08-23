@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1F9B177B-D512-4C14-8C8C-8C1B11E0AC76}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>zzlydx</RootNamespace>
+    <AssemblyName>zzlydx</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Jiftle.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Bin\Jiftle.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\lydxDB.mdf" />
+    <Content Include="App_Data\lydxDB_log.ldf">
+      <DependentUpon>lydxDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_LocalResources\Image\cz.gif" />
+    <Content Include="App_LocalResources\Image\dl.gif" />
+    <Content Include="App_LocalResources\Image\images01\bg.gif" />
+    <Content Include="App_LocalResources\Image\images01\dl.gif" />
+    <Content Include="App_LocalResources\Image\images01\left.gif" />
+    <Content Include="App_LocalResources\Image\images01\login_03.gif" />
+    <Content Include="App_LocalResources\Image\images01\login_05.gif" />
+    <Content Include="App_LocalResources\Image\images01\login_06.gif" />
+    <Content Include="App_LocalResources\Image\images01\login_07.gif" />
+    <Content Include="App_LocalResources\Image\images01\login_08.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_03.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_04.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_05.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_07.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_09.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_11.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_12.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_14.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_16.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_18.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_20.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_21.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_22.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_29.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_30.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_31.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_32.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_34.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_36.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_37.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_39.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_40.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_41.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_45.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_47.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_48.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_51.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_52.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_55.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_55_1.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_58.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_59.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_61.gif" />
+    <Content Include="App_LocalResources\Image\images01\main_62.gif" />
+    <Content Include="App_LocalResources\Image\images02\dl.gif" />
+    <Content Include="App_LocalResources\Image\images02\login_02.gif" />
+    <Content Include="App_LocalResources\Image\images02\login_04.gif" />
+    <Content Include="App_LocalResources\Image\images02\login_05.gif" />
+    <Content Include="App_LocalResources\Image\images02\login_06.gif" />
+    <Content Include="App_LocalResources\Image\images02\login_07.gif" />
+    <Content Include="App_LocalResources\Image\images02\login_08.gif" />
+    <Content Include="App_LocalResources\Image\images02\login_1.jpg" />
+    <Content Include="App_LocalResources\Image\images03\11.gif" />
+    <Content Include="App_LocalResources\Image\images03\back.gif" />
+    <Content Include="App_LocalResources\Image\images03\first.gif" />
+    <Content Include="App_LocalResources\Image\images03\go.gif" />
+    <Content Include="App_LocalResources\Image\images03\home.gif" />
+    <Content Include="App_LocalResources\Image\images03\last.gif" />
+    <Content Include="App_LocalResources\Image\images03\main_01.gif" />
+    <Content Include="App_LocalResources\Image\images03\main_03.gif" />
+    <Content Include="App_LocalResources\Image\images03\main_05.gif" />
+    <Content Include="App_LocalResources\Image\images03\main_07.gif" />
+    <Content Include="App_LocalResources\Image\images03\main_08.gif" />
+    <Content Include="App_LocalResources\Image\images03\main_09.gif" />
+    <Content Include="App_LocalResources\Image\images03\main_11.gif" />
+    <Content Include="App_LocalResources\Image\images03\main_12.gif" />
+    <Content Include="App_LocalResources\Image\images03\main_16.gif" />
+    <Content Include="App_LocalResources\Image\images03\main_18.gif" />
+    <Content Include="App_LocalResources\Image\images03\main_18_1.gif" />
+    <Content Include="App_LocalResources\Image\images03\main_20.gif" />
+    <Content Include="App_LocalResources\Image\images03\main_24.gif" />
+    <Content Include="App_LocalResources\Image\images03\main_25.gif" />
+    <Content Include="App_LocalResources\Image\images03\main_27.gif" />
+    <Content Include="App_LocalResources\Image\images03\next.gif" />
+    <Content Include="App_LocalResources\Image\images03\quit.gif" />
+    <Content Include="App_LocalResources\Image\images03\uesr.gif" />
+    <Content Include="App_LocalResources\Image\login_03.gif" />
+    <Content Include="App_LocalResources\Image\login_04.gif" />
+    <Content Include="App_LocalResources\Image\login_06.gif" />
+    <Content Include="App_LocalResources\Image\login_07.gif" />
+    <Content Include="App_LocalResources\Image\login_08.gif" />
+    <Content Include="App_LocalResources\Image\login_09.gif" />
+    <Content Include="App_LocalResources\Image\login_10.gif" />
+    <Content Include="App_LocalResources\Image\login_11.gif" />
+    <Content Include="App_LocalResources\Image\tabbg1.gif" />
+    <Content Include="App_LocalResources\Image\tabbg2.gif" />
+    <Content Include="App_LocalResources\Image\worldmap.jpg" />
+    <Content Include="App_Themes\DefaultTheme\Default.css" />
+    <Content Include="Bin\Jiftle.Data.dll" />
+    <Content Include="Bin\System.Data.SQLite.dll" />
+    <Content Include="center.aspx" />
+    <Content Include="center.html" />
+    <Content Include="Default2.aspx" />
+    <Content Include="down.aspx" />
+    <Content Include="down.html" />
+    <Content Include="Global.asax" />
+    <Content Include="images\11.gif" />
+    <Content Include="images\22.gif" />
+    <Content Include="images\33.gif" />
+    <Content Include="images\back.gif" />
+    <Content Include="images\bg.gif" />
+    <Content Include="images\del.gif" />
+    <Content Include="images\dl.gif" />
+    <Content Include="images\Favorite.png" />
+    <Content Include="images\go.gif" />
+    <Content Include="images\last.gif" />
+    <Content Include="images\left.gif" />
+    <Content Include="images\login_03.gif" />
+    <Content Include="images\login_05.gif" />
+    <Content Include="images\login_06.gif" />
+    <Content Include="images\login_07.gif" />
+    <Content Include="images\login_08.gif" />
+    <Content Include="images\main_03.gif" />
+    <Content Include="images\main_04.gif" />
+    <Content Include="images\main_05.gif" />
+    <Content Include="images\main_07.gif" />
+    <Content Include="images\main_09.gif" />
+    <Content Include="images\main_10.gif" />
+    <Content Include="images\main_11.gif" />
+    <Content Include="images\main_12.gif" />
+    <Content Include="images\main_14.gif" />
+    <Content Include="images\main_16.gif" />
+    <Content Include="images\main_18.gif" />
+    <Content Include="images\main_20.gif" />
+    <Content Include="images\main_21.gif" />
+    <Content Include="images\main_22.gif" />
+    <Content Include="images\main_29.gif" />
+    <Content Include="images\main_30.gif" />
+    <Content Include="images\main_31.gif" />
+    <Content Include="images\main_32.gif" />
+    <Content Include="images\main_34.gif" />
+    <Content Include="images\main_36.gif" />
+    <Content Include="images\main_37.gif" />
+    <Content Include="images\main_39.gif" />
+    <Content Include="images\main_40.gif" />
+    <Content Include="images\main_41.gif" />
+    <Content Include="images\main_45.gif" />
+    <Content Include="images\main_47.gif" />
+    <Content Include="images\main_48.gif" />
+    <Content Include="images\main_51.gif" />
+    <Content Include="images\main_52.gif" />
+    <Content Include="images\main_55.gif" />
+    <Content Include="images\main_55_1.gif" />
+    <Content Include="images\main_58.gif" />
+    <Content Include="images\main_59.gif" />
+    <Content Include="images\main_61.gif" />
+    <Content Include="images\main_62.gif" />
+    <Content Include="images\next.gif" />
+    <Content Include="images\person.png" />
+    <Content Include="images\tab_03.gif" />
+    <Content Include="images\tab_05.gif" />
+    <Content Include="images\tab_07.gif" />
+    <Content Include="images\tab_12.gif" />
+    <Content Include="images\tab_15.gif" />
+    <Content Include="images\tab_17.gif" />
+    <Content Include="images\tab_18.gif" />
+    <Content Include="images\tab_19.gif" />
+    <Content Include="images\tab_20.gif" />
+    <Content Include="images\tb.gif" />
+    <Content Include="images\treeview01.gif" />
+    <Content Include="images\treeview02.gif" />
+    <Content Include="images\treeview03.gif" />
+    <Content Include="images\treeview04.gif" />
+    <Content Include="left.aspx" />
+    <Content Include="left.html" />
+    <Content Include="Login.aspx" />
+    <Content Include="lydxMIS\DuNvSSBZ109.aspx" />
+    <Content Include="lydxMIS\DuNvYLBX106.aspx" />
+    <Content Include="lydxMIS\DuShengZN101.aspx" />
+    <Content Include="lydxMIS\FangQiEHZB110.aspx" />
+    <Content Include="lydxMIS\HuiNongZCYH113.aspx" />
+    <Content Include="lydxMIS\JiangLiFZ102.aspx" />
+    <Content Include="lydxMIS\JianMianXNH108.aspx" />
+    <Content Include="lydxMIS\JieYuJ105.aspx" />
+    <Content Include="lydxMIS\JieYuSSBX107.aspx" />
+    <Content Include="lydxMIS\JiTiFLYH112.aspx" />
+    <Content Include="lydxMIS\ShengHuoBT104.aspx" />
+    <Content Include="lydxMIS\TeBieFZ103.aspx" />
+    <Content Include="lydxMIS\ZhongZhaoYD111.aspx" />
+    <Content Include="lydxUser\DomainChange.aspx" />
+    <Content Include="lydxUser\GroupManage.aspx" />
+    <Content Include="lydxUser\PolicyChange.aspx" />
+    <Content Include="lydxUser\UserManage.aspx" />
+    <Content Include="main.aspx" />
+    <Content Include="main.html" />
+    <Content Include="middel.html" />
+    <Content Include="newleft.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="right.html" />
+    <Content Include="tab\images\11.gif" />
+    <Content Include="tab\images\22.gif" />
+    <Content Include="tab\images\33.gif" />
+    <Content Include="tab\images\back.gif" />
+    <Content Include="tab\images\bg.gif" />
+    <Content Include="tab\images\del.gif" />
+    <Content Include="tab\images\edt.gif" />
+    <Content Include="tab\images\first.gif" />
+    <Content Include="tab\images\go.gif" />
+    <Content Include="tab\images\last.gif" />
+    <Content Include="tab\images\next.gif" />
+    <Content Include="tab\images\tab_03.gif" />
+    <Content Include="tab\images\tab_05.gif" />
+    <Content Include="tab\images\tab_07.gif" />
+    <Content Include="tab\images\tab_12.gif" />
+    <Content Include="tab\images\tab_15.gif" />
+    <Content Include="tab\images\tab_17.gif" />
+    <Content Include="tab\images\tab_18.gif" />
+    <Content Include="tab\images\tab_19.gif" />
+    <Content Include="tab\images\tab_20.gif" />
+    <Content Include="tab\images\tb.gif" />
+    <Content Include="tab\tab.html" />
+    <Content Include="testiframe.aspx" />
+    <Content Include="top.aspx" />
+    <Content Include="top.html" />
+    <Content Include="TreeLineImages\dash.gif" />
+    <Content Include="TreeLineImages\dashminus.gif" />
+    <Content Include="TreeLineImages\dashplus.gif" />
+    <Content Include="TreeLineImages\i.gif" />
+    <Content Include="TreeLineImages\l.gif" />
+    <Content Include="TreeLineImages\lminus.gif" />
+    <Content Include="TreeLineImages\lplus.gif" />
+    <Content Include="TreeLineImages\minus.gif" />
+    <Content Include="TreeLineImages\noexpand.gif" />
+    <Content Include="TreeLineImages\plus.gif" />
+    <Content Include="TreeLineImages\r.gif" />
+    <Content Include="TreeLineImages\rminus.gif" />
+    <Content Include="TreeLineImages\rplus.gif" />
+    <Content Include="TreeLineImages\t.gif" />
+    <Content Include="TreeLineImages\tminus.gif" />
+    <Content Include="TreeLineImages\tplus.gif" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="center.aspx.designer.cs">
+      <DependentUpon>center.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default2.aspx.designer.cs">
+      <DependentUpon>Default2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="down.aspx.designer.cs">
+      <DependentUpon>down.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="left.aspx.designer.cs">
+      <DependentUpon>left.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lydxMIS\DuNvSSBZ109.aspx.designer.cs">
+      <DependentUpon>DuNvSSBZ109.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lydxMIS\DuNvYLBX106.aspx.designer.cs">
+      <DependentUpon>DuNvYLBX106.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lydxMIS\FangQiEHZB110.aspx.designer.cs">
+      <DependentUpon>FangQiEHZB110.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lydxMIS\HuiNongZCYH113.aspx.designer.cs">
+      <DependentUpon>HuiNongZCYH113.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lydxMIS\JiangLiFZ102.aspx.designer.cs">
+      <DependentUpon>JiangLiFZ102.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lydxMIS\JianMianXNH108.aspx.designer.cs">
+      <DependentUpon>JianMianXNH108.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lydxMIS\JieYuJ105.aspx.designer.cs">
+      <DependentUpon>JieYuJ105.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lydxMIS\JieYuSSBX107.aspx.designer.cs">
+      <DependentUpon>JieYuSSBX107.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lydxMIS\JiTiFLYH112.aspx.designer.cs">
+      <DependentUpon>JiTiFLYH112.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lydxMIS\ShengHuoBT104.aspx.designer.cs">
+      <DependentUpon>ShengHuoBT104.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lydxMIS\TeBieFZ103.aspx.designer.cs">
+      <DependentUpon>TeBieFZ103.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lydxMIS\ZhongZhaoYD111.aspx.designer.cs">
+      <DependentUpon>ZhongZhaoYD111.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lydxUser\DomainChange.aspx.designer.cs">
+      <DependentUpon>DomainChange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lydxUser\GroupManage.aspx.designer.cs">
+      <DependentUpon>GroupManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lydxUser\PolicyChange.aspx.designer.cs">
+      <DependentUpon>PolicyChange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lydxUser\UserManage.aspx.designer.cs">
+      <DependentUpon>UserManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.master.designer.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="newleft.aspx.designer.cs">
+      <DependentUpon>newleft.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\Funcs.cs" />
+    <Compile Include="App_Code\rwDB.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\Table\Table_Dsznfmjlb.cs" />
+    <Compile Include="App_Code\Typs.cs" />
+    <Compile Include="center.aspx.cs">
+      <DependentUpon>center.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default2.aspx.cs">
+      <DependentUpon>Default2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="down.aspx.cs">
+      <DependentUpon>down.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="left.aspx.cs">
+      <DependentUpon>left.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lydxMIS\DuNvSSBZ109.aspx.cs">
+      <DependentUpon>DuNvSSBZ109.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lydxMIS\DuNvYLBX106.aspx.cs">
+      <DependentUpon>DuNvYLBX106.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lydxMIS\DuShengZN101.aspx.cs">
+      <DependentUpon>DuShengZN101.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lydxMIS\DuShengZN101.aspx.designer.cs">
+      <DependentUpon>DuShengZN101.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lydxMIS\FangQiEHZB110.aspx.cs">
+      <DependentUpon>FangQiEHZB110.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lydxMIS\HuiNongZCYH113.aspx.cs">
+      <DependentUpon>HuiNongZCYH113.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lydxMIS\JiangLiFZ102.aspx.cs">
+      <DependentUpon>JiangLiFZ102.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lydxMIS\JianMianXNH108.aspx.cs">
+      <DependentUpon>JianMianXNH108.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lydxMIS\JieYuJ105.aspx.cs">
+      <DependentUpon>JieYuJ105.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lydxMIS\JieYuSSBX107.aspx.cs">
+      <DependentUpon>JieYuSSBX107.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lydxMIS\JiTiFLYH112.aspx.cs">
+      <DependentUpon>JiTiFLYH112.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lydxMIS\ShengHuoBT104.aspx.cs">
+      <DependentUpon>ShengHuoBT104.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lydxMIS\TeBieFZ103.aspx.cs">
+      <DependentUpon>TeBieFZ103.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lydxMIS\ZhongZhaoYD111.aspx.cs">
+      <DependentUpon>ZhongZhaoYD111.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lydxUser\DomainChange.aspx.cs">
+      <DependentUpon>DomainChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lydxUser\GroupManage.aspx.cs">
+      <DependentUpon>GroupManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lydxUser\PolicyChange.aspx.cs">
+      <DependentUpon>PolicyChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lydxUser\UserManage.aspx.cs">
+      <DependentUpon>UserManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.master.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="newleft.aspx.cs">
+      <DependentUpon>newleft.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="testiframe.aspx.cs">
+      <DependentUpon>testiframe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="top.aspx.cs">
+      <DependentUpon>top.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="top.aspx.designer.cs">
+      <DependentUpon>top.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lydxPolicy\" />
+    <Folder Include="lydxReport\" />
+    <Folder Include="lydxStatic\" />
+    <Folder Include="Main\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_LocalResources\Image\images01\Thumbs.db" />
+    <None Include="App_LocalResources\Image\images02\Thumbs.db" />
+    <None Include="App_LocalResources\Image\images03\Thumbs.db" />
+    <None Include="App_LocalResources\Image\Thumbs.db" />
+    <Content Include="App_Themes\DefaultTheme\Default.skin" />
+    <None Include="Bin\Jiftle.Data.dll.refresh" />
+    <None Include="images\Thumbs.db" />
+    <Content Include="MasterPage.master" />
+    <None Include="tab\images\Thumbs.db" />
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2063</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

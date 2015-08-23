@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode title="系统管理菜单"  description="首页">
+      
+        <siteMapNode title="信息管理"  description="">
+        <siteMapNode url="~/lydxMIS/DuShengZN101.aspx"  title="独生子女"  description="" />
+        <siteMapNode url="~/lydxMIS/JiangLiFZ102.aspx" title="奖励扶助"  description="" />
+        <siteMapNode url="~/lydxMIS/TeBieFZ103.aspx" title="特别扶助"  description="" />
+        <siteMapNode url="~/lydxMIS/ShengHuoBT104.aspx" title="生活补贴"  description="" />
+          
+        <siteMapNode url="~/lydxMIS/JieYuJ105.aspx" title="节育奖"  description="" />
+        <siteMapNode url="~/lydxMIS/DuNvYLBX106.aspx" title="独女家庭养老保险"  description="" />
+        <siteMapNode url="~/lydxMIS/JieYuSSBX107.aspx" title="节育手术保险"  description="" />
+          
+        <siteMapNode url="~/lydxMIS/JianMianXNH108.aspx" title="减免新农合"  description="" />
+        <siteMapNode url="~/lydxMIS/DuNvSSBZ109.aspx" title="独女家庭低保"  description="" />
+          
+        <siteMapNode url="~/lydxMIS/FangQiEHZB110.aspx" title="放弃二孩指标"  description="" />
+        <siteMapNode url="~/lydxMIS/ZhongZhaoYD111.aspx" title="中招优待"  description="" />
+        <siteMapNode url="~/lydxMIS/JiTiFLYH112.aspx" title="集体福利优惠"  description="" />
+        <siteMapNode url="~/lydxMIS/HuiNongZCYH113.aspx" title="惠农政策优惠"  description="" />
+      </siteMapNode>
+      
+    </siteMapNode>
+</siteMap>
